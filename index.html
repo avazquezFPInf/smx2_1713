@@ -457,14 +457,16 @@
                 display: none
             }
         }
-    </style>
+    .phase-card{border-top:5px solid var(--phase)}.phase-card .date{color:var(--phase)}.template-link{display:inline-block;background:#e8edff;border:1px solid #c8d5f4;border-radius:10px;padding:12px 15px;font-weight:750}.milestone-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.milestone-cards a{text-decoration:none;color:var(--ink)}.phase-gantt{overflow:auto;border:1px solid var(--border);border-radius:16px;background:white}.gantt-inner{min-width:1000px;padding:18px 20px 24px}.gantt-row{display:grid;grid-template-columns:330px 1fr;gap:20px;min-height:58px;align-items:center}.gantt-label{font-size:.86rem;padding:8px 0;line-height:1.35}.gantt-label strong{display:block}.gantt-label span{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}.gantt-track{position:relative;height:100%;min-height:45px;background:repeating-linear-gradient(to right,transparent 0,transparent calc(12.069% - 1px),#edf0f5 calc(12.069% - 1px),#edf0f5 12.069%)}.gantt-bar{position:absolute;top:50%;transform:translateY(-50%);height:18px;background:var(--phase);opacity:.65;border-radius:5px}.phase-duration .gantt-bar{height:26px;opacity:1}.phase-duration .gantt-label{color:var(--phase)}.gantt-axis{min-height:40px;border-bottom:1px solid var(--border);margin-bottom:8px;font-weight:700}.gantt-axis .gantt-track{background:none}.gantt-axis .gantt-track span{position:absolute;top:10px;transform:translateX(-50%);font-size:.75rem;color:var(--muted);white-space:nowrap}.gantt-phase{margin:10px 0;border-bottom:1px solid var(--border);padding-bottom:8px}.gantt-phase summary{cursor:pointer;padding:12px;background:#f5f7fb;border-radius:8px;font-weight:800;color:var(--phase)}.gantt-phase summary .small{margin-left:14px;font-weight:500}.gantt-diamond{position:absolute;top:50%;transform:translate(-50%,-50%);color:var(--phase);font-size:24px;line-height:1}.milestone-row{background:#f8fafc}.phase-gantt:focus-visible,summary:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #3756d9;outline-offset:3px}@media(max-width:760px){.milestone-cards{grid-template-columns:1fr 1fr}.template-link{width:100%}}@media print{.gantt-inner{min-width:0;padding:6px}.gantt-row{grid-template-columns:230px 1fr;gap:10px}.gantt-label{font-size:9pt}.gantt-axis .gantt-track span{font-size:7pt}.phase-gantt{overflow:visible}details{break-inside:avoid}}
+
+</style>
 </head>
 
 <body>
     <header>
         <div>
             <div class="brand">♥ PROJECTE SOLIDARI · SMX 2026</div>
-            <div class="subbrand">19 d’octubre – 18 de desembre de 2026 · Jornada Solidària</div>
+            <div class="subbrand">22 d’octubre – 18 de desembre de 2026 · Jornada Solidària</div>
         </div>
         <nav id="nav"></nav>
     </header>
@@ -474,158 +476,33 @@
     <main id="main"></main>
     <footer>Guia de treball i seguiment · Trello és l'eina de gestió del projecte · Calendari 2026</footer>
     <script>
-        const blocks = [
-            {
-  "title": "Calendari inicial: de la necessitat a la proposta",
-  "short": "Idear",
-  "dates": "19 d’octubre – 9 de novembre",
-  "goal": "Identificar una necessitat solidària real, defensar una proposta i concretar les funcionalitats del producte abans de planificar el desenvolupament.",
-  "days": [
-    [
-      "Dilluns 19/10",
-      "3 h",
-      [
-        "Identificar una necessitat solidària i les persones a qui es vol ajudar.",
-        "Proposar possibles solucions tecnològiques i triar-ne una.",
-        "Contrastar la necessitat i els destinataris amb el professorat.",
-        "Actualitzar els apartats 1 i 2 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Equip, necessitat i primera idea de solució definits."
-    ],
-    [
-      "Dimarts 20/10",
-      "1 h",
-      [
-        "Concretar quin benefici aportarà la proposta.",
-        "Registrar les primeres tasques i acords al Trello.",
-        "Actualitzar els apartats 2 i 9 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Necessitat contrastada i acords registrats."
-    ],
-    [
-      "Dijous 22/10",
-      "2 h",
-      [
-        "Recollir en un document: problema, destinataris, solució i impacte solidari.",
-        "Dibuixar l’arquitectura inicial de la solució i, si és una aplicació, els wireframes generals de les pantalles.",
-        "Definir un exemple d’ús de la proposta.",
-        "Actualitzar els apartats 1–3, 6 i 7 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Documentació de la proposta preparada."
-    ],
-    [
-      "Dilluns 26/10",
-      "3 h",
-      [
-        "Anotar les preguntes i els punts que cal revisar.",
-        "Recollir el retorn del professorat.",
-        "Acordar els canvis prioritaris i comprovar que són viables.",
-        "Començar a definir les funcionalitats amb les fitxes de la plantilla.",
-        "Actualitzar els apartats 4 i 8 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Feedback de la proposta presentada i actualització de la documentació."
-    ],
-    [
-      "Dimarts 27/10",
-      "1 h",
-      [
-        "Actualitzar el Trello.",
-        "Afegir o actualitzar les funcionalitats als wireframes i a l’esquema d’arquitectura.",
-        "Actualitzar els apartats 4, 6 i 7 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Funcionalitats i dibuixos actualitzats amb els mateixos codis de referència."
-    ],
-    [
-      "Dijous 29/10",
-      "2 h",
-      [
-        "Descriure què podrà fer una persona amb el producte.",
-        "Llistar les funcionalitats i distingir les imprescindibles de les opcionals.",
-        "Esbossar el recorregut principal d’ús.",
-        "Actualitzar l’arquitectura i els wireframes.",
-        "Actualitzar els apartats 4–7 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Primera llista de funcionalitats i recorregut d’ús."
-    ],
-    [
-      "Dilluns 2/11",
-      "0 h · FESTIU",
-      [
-        "Sense sessió prevista al calendari del projecte."
-      ],
-      "—"
-    ],
-    [
-      "Dimarts 3/11",
-      "1 h",
-      [
-        "Revisar les funcionalitats amb el professorat.",
-        "Detectar dubtes, dependències i recursos necessaris.",
-        "Registrar les decisions i els bloquejos al Trello.",
-        "Actualitzar els apartats 4 i 8 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Funcionalitats revisades i dubtes identificats."
-    ],
-    [
-      "Dijous 5/11",
-      "2 h",
-      [
-        "Detallar les funcionalitats essencials amb exemples d’ús.",
-        "Definir el resultat esperat de cada funcionalitat.",
-        "Escriure una prova concreta i un cas alternatiu per a cada funcionalitat imprescindible.",
-        "Comprovar els recursos, materials i accessos necessaris.",
-        "Actualitzar els apartats 4 i 6 del dossier i registrar la sessió al diari de treball."
-      ],
-      "Definició funcional detallada i recursos identificats."
-    ],
-    [
-      "Dilluns 9/11",
-      "3 h",
-      [
-        "Tancar l’abast del producte amb el professorat.",
-        "Validar les funcionalitats imprescindibles i el recorregut principal.",
-        "Completar l’arquitectura i els wireframes inicials de la proposta.",
-        "Deixar la documentació i els acords al Trello per començar la planificació del 10/11.",
-        "Actualitzar els apartats 1–9 i la checklist final del dossier i registrar la sessió al diari de treball."
-      ],
-      "Proposta i definició funcional validades."
-    ]
-  ],
-  "due": "9 de novembre · VALIDACIÓ INICIAL",
-  "product": "Dossier d’equip amb la proposta solidària, les fitxes de funcionalitats, l’arquitectura, els wireframes o l’esquema d’activitat i el diari de treball",
-  "criteria": [
-    "La necessitat, els destinataris i el benefici solidari són clars.",
-    "La proposta incorpora el feedback del professorat.",
-    "Les funcionalitats imprescindibles i el recorregut d’ús estan definits.",
-    "Els recursos i els acords estan registrats al Trello.",
-    "Cada funcionalitat imprescindible té un resultat esperat, un cas alternatiu i una prova verificable.",
-    "L’arquitectura i els wireframes inicials concorden amb les funcionalitats; si no hi ha pantalles, hi ha un esquema de l’activitat.",
-    "El diari està actualitzat i el professorat pot obrir les evidències."
-  ],
-  "trello": "Enllaç al dossier compartit de l’equip, fotografies llegibles dels dibuixos i acords validats. Relacioneu les funcionalitats F01, F02… amb les targetes corresponents; detallareu les tasques de desenvolupament al bloc 2."
-},
-            { title: 'Planificació del desenvolupament', short: 'Planificar', dates: '10–12 de novembre', goal: 'Convertir les funcionalitats definides en un pla de treball realista, amb un producte mínim viable (MVP).', days: [['Dimarts 10/11', '1 h', ['Revisar les funcionalitats acordades el 9/11.', 'Distingir entre funcionalitats imprescindibles (MVP) i millores opcionals.', 'Crear les targetes inicials a Trello i dividir les tasques grans.'], 'Llista prioritzada de funcionalitats i targetes inicials.'], ['Dijous 12/11', '2 h', ['Acabar de dividir el treball en tasques concretes i verificables.', 'Assignar responsable, data límit i criteri d’acceptació a cada targeta.', 'Preveure proves, materials, demostració i possibles riscos.', 'Defensar la planificació davant del professorat.'], 'Tauler Trello complet i validat.']], due: '12 de novembre · ENTREGA 1', product: 'Planificació de desenvolupament validada', criteria: ['Totes les funcionalitats essencials estan representades en tasques.', 'Cada tasca té responsable, data límit i criteri d’acceptació.', 'L’MVP és realista i està prioritzat.', 'Hi ha tasques previstes de proves i preparació de la Jornada.'], trello: 'Enllaç al tauler i captura de les tasques amb terminis.' },
-            { title: 'Disseny i prototipatge', short: 'Dissenyar', dates: '16–19 de novembre', goal: 'Mostrar com serà la solució i com la utilitzarà una persona abans de dedicar hores a implementar-la.', days: [['Dilluns 16/11', '3 h', ['Dibuixar l’estructura general de la solució.', 'Crear pantalles, esquemes, fluxos o guió de la demostració.', 'Definir el recorregut d’una persona usuària des de l’inici fins al resultat.'], 'Esbossos i primera versió del prototip.'], ['Dimarts 17/11', '1 h', ['Ensenyar el disseny al professorat.', 'Detectar incoherències, pantalles o passos que falten.', 'Reordenar les tasques del Trello segons el feedback.'], 'Feedback i tasques de millora registrades.'], ['Dijous 19/11', '2 h', ['Aplicar els canvis prioritaris.', 'Acabar un prototip navegable, un esquema interactiu o una simulació clara.', 'Explicar-ne el funcionament en una demostració breu.'], 'Prototip visual presentat.']], due: '19 de novembre · ENTREGA 2', product: 'Prototip visual / interactiu', criteria: ['S’entén què farà la solució i a qui ajudarà.', 'Es poden mostrar els passos principals d’ús.', 'El disseny cobreix l’MVP definit.', 'Les decisions i els canvis estan reflectits al Trello.'], trello: 'Enllaç o imatges del prototip i targetes de disseny tancades.' },
-            { title: 'Desenvolupament i MVP complet', short: 'Construir', dates: '23 de novembre – 3 de desembre', goal: 'Passar del disseny a una primera versió funcional i completar totes les funcionalitats imprescindibles de l’MVP, integrades i utilitzables.', days: [['Dilluns 23/11', '3 h', ['Preparar l’entorn i l’estructura tècnica.', 'Implementar la primera funcionalitat imprescindible.', 'Guardar versions i evidències del que es construeix.'], 'Codi, recurs o demostració parcial executable.'], ['Dimarts 24/11', '1 h', ['Fer un control de Trello: previst, fet i bloquejos.', 'Provar la funcionalitat implementada.', 'Ajustar les tasques fins a dijous.'], 'Evidència de prova i Trello actualitzat.'], ['Dijous 26/11', '2 h', ['Acabar una funcionalitat completa de principi a fi.', 'Preparar una demo curta que no depengui d’explicacions teòriques.', 'Mostrar què funciona i què falta.'], 'Primera versió funcional demostrada com a revisió intermèdia, sense entrega independent.'], ['Dilluns 30/11', '3 h', ['Implementar les funcionalitats essencials pendents.', 'Integrar les parts fetes pels diferents membres.', 'Descartar o ajornar millores opcionals que posin en risc el termini.'], 'Versió avançada de l’MVP.'], ['Dimarts 1/12', '1 h', ['Comparar el progrés real amb el Trello.', 'Identificar tasques crítiques i bloquejos.', 'Replanificar les hores disponibles fins al 10/12.'], 'Llista de riscos i pla de tancament.'], ['Dijous 3/12', '2 h', ['Acabar la integració de l’MVP.', 'Recórrer les funcionalitats essencials amb una demo.', 'Registrar els errors coneguts per a la fase de proves.'], 'MVP funcional presentat.']], due: '3 de desembre · ENTREGA 3', product: 'MVP complet i demostrable', criteria: ['Totes les funcionalitats imprescindibles estan implementades.', 'Es pot fer el recorregut principal d’ús.', 'Els errors pendents estan identificats.', 'Hi ha un pla realista de correccions i proves.'], trello: 'Enllaç a la versió funcional, llista d’errors i tasques prioritzades.' },
-            { title: 'Proves i entrega final', short: 'Validar', dates: '7–10 de desembre', goal: 'Comprovar el producte amb persones reals, corregir problemes i tancar-lo abans de la setmana de la Jornada.', days: [['Dilluns 7/12', '3 h', ['Preparar casos de prova del recorregut principal.', 'Fer una prova pilot amb altres alumnes, preferentment sense guiar-los.', 'Anotar errors, dificultats i temps necessari.', 'Prioritzar correccions crítiques.'], 'Registre de proves i incidències.'], ['Dimarts 8/12', '0 h · FESTIU', ['No hi ha classe ni entrega presencial.'], '—'], ['Dijous 10/12', '2 h', ['Corregir errors crítics i verificar les correccions.', 'Preparar instruccions d’ús i accés al producte.', 'Tancar les tasques essencials i mostrar la versió definitiva.'], 'Producte final lliurat i validat.']], due: '10 de desembre · ENTREGA 4', product: 'Producte definitiu i provat', criteria: ['L’MVP funciona sense errors crítics coneguts.', 'Hi ha evidències de la prova pilot i de les correccions.', 'Les instruccions d’ús i l’accés al producte estan preparats.', 'Trello reflecteix el treball real i el producte es pot presentar.'], trello: 'Versió final, registre de proves, instruccions i targetes tancades.' },
-            { title: 'Preparació de la Jornada', short: 'Presentar', dates: '14–18 de desembre', goal: 'Arribar al 18 de desembre amb una demostració fluida i una activitat que la resta de companys pugui realitzar.', days: [['Dilluns 14/12', '3 h', ['Fer un assaig complet en les condicions de la Jornada.', 'Practicar l’explicació del problema solidari i de la solució.', 'Comprovar durada, accés, materials i participació del públic.'], 'Assaig general i incidències menors.'], ['Dimarts 15/12', '1 h', ['Corregir detalls menors detectats a l’assaig.', 'Assignar rols definitius: acollida, explicació, suport i tancament.'], 'Rols i guió definitius.'], ['Dijous 17/12', '2 h', ['Verificar dispositius, connexió, enllaços i còpies de seguretat.', 'Preparar espai, materials i instruccions visibles.', 'Completar la checklist final.'], 'Tot a punt per a la Jornada.'], ['Divendres 18/12', 'Jornada', ['Presentar el problema i la solució.', 'Facilitar que els companys provin o realitzin l’activitat.', 'Recollir una valoració breu de l’experiència.'], 'JORNADA SOLIDÀRIA.']], due: '18 de desembre · JORNADA SOLIDÀRIA', product: 'Demostració i activitat pública', criteria: ['La demostració es pot fer sense improvisacions importants.', 'Els companys poden participar-hi.', 'Els rols, materials i recursos estan preparats.', 'Hi ha una alternativa si falla la connexió o algun dispositiu.'], trello: 'Checklist logística, guió de presentació i enllaços de suport.' }
-        ];
-        const keyDates = [['12 NOV', 'Planificació validada', 'Tasques, responsables, terminis i MVP'], ['19 NOV', 'Prototip visual', 'Estructura i recorregut d’ús'], ['03 DES', 'MVP complet', 'Totes les funcionalitats imprescindibles'], ['10 DES', 'Producte definitiu', 'Provat, corregit i preparat'], ['18 DES', 'Jornada Solidària', 'Presentació i participació del públic']];
-        function renderGantt() {
-            const dayMs = 86400000, start = Date.UTC(2026, 9, 19), end = Date.UTC(2026, 11, 18);
-            const dateOf = label => { const [, day, month] = label.match(/(\d+)\/(\d+)/); return Date.UTC(2026, Number(month) - 1, Number(day)); };
-            const sessions = [...new Set(blocks.flatMap(b => b.days.filter(([, hours]) => !hours.startsWith('0 h')).map(([label]) => dateOf(label))))].sort((a, b) => a - b);
-            const x = date => 250 + Math.min(sessions.filter(d => d < date).length, sessions.length - 1) / (sessions.length - 1) * 810;
-            const ticks = sessions.filter((d, i) => i === 0 || Math.floor((d - start) / (7 * dayMs)) !== Math.floor((sessions[i - 1] - start) / (7 * dayMs)));
-            const milestones = ['Validació inicial', 'Entrega 1 · Planificació', 'Entrega 2 · Prototip', 'Entrega 3 · MVP complet', 'Entrega 4 · Producte final', 'Jornada Solidària'];
-            return `<section class="section"><h2>Calendari del projecte · diagrama de Gantt</h2><p class="hint">Del 19 d’octubre al 18 de desembre de 2026. Escala de sessions lectives: s’ometen els dies sense classe. Les fases s’enllacen de manera contínua i els rombes indiquen la data real de cada fita.</p><div class="gantt-scroll" tabindex="0" role="region" aria-label="Calendari del projecte amb desplaçament horitzontal"><svg class="gantt" viewBox="0 0 1120 580" role="img" aria-labelledby="gantt-title gantt-desc"><title id="gantt-title">Blocs i fites del projecte solidari</title><desc id="gantt-desc">${blocks.map((b, i) => `Bloc ${i + 1}: ${b.title}, ${b.dates}. ${b.due}.`).join(' ')}</desc><rect width="1120" height="580" rx="16" fill="white"/><text x="22" y="30" font-size="14" font-weight="700">BLOC / FASE</text><text x="250" y="30" font-size="14" font-weight="700">OCTUBRE</text><text x="${x(Date.UTC(2026, 10, 1))}" y="30" font-size="14" font-weight="700">NOVEMBRE</text><text x="${x(Date.UTC(2026, 11, 1))}" y="30" font-size="14" font-weight="700">DESEMBRE</text>${ticks.map(d => `<line x1="${x(d)}" y1="65" x2="${x(d)}" y2="550" stroke="#e2e8f0"/><text x="${x(d)}" y="55" text-anchor="middle" font-size="12" fill="#64748b">${new Date(d).getUTCDate()}/${new Date(d).getUTCMonth() + 1}</text>`).join('')}<line x1="1060" y1="65" x2="1060" y2="550" stroke="#14633c" stroke-dasharray="5 4"/><text x="1060" y="55" text-anchor="middle" font-size="12" fill="#14633c">18/12</text>${blocks.map((b, i) => { const first = dateOf(b.days[0][0]), last = dateOf(b.days[b.days.length - 1][0]), y = 90 + i * 77, left = x(first), right = x(last), barEnd = i < blocks.length - 1 ? x(dateOf(blocks[i + 1].days[0][0])) : right, color = i === 5 ? '#218354' : '#3756d9'; return `<g><text x="22" y="${y + 9}" font-size="15" font-weight="700">${i + 1} · ${['Idear', 'Planificar', 'Dissenyar', 'Construir', 'Validar', 'Presentar'][i]}</text><text x="22" y="${y + 30}" font-size="12" fill="#64748b">${b.dates}</text><rect x="${left}" y="${y - 8}" width="${Math.max(6, barEnd - left)}" height="24" rx="6" fill="${color}" opacity=".85"/>${i < blocks.length - 1 ? `<path d="M ${barEnd} ${y + 16} V ${y + 69}" fill="none" stroke="#a9b8eb" stroke-width="2" stroke-dasharray="4 3"/>` : ''}<path d="M ${right} ${y - 4} l 9 12 l -9 12 l -9 -12 Z" fill="${color}" stroke="white" stroke-width="2"/><text x="${right}" y="${y + 41}" text-anchor="end" font-size="12" font-weight="650" fill="${color}">${b.days[b.days.length - 1][0].split(' ')[1]} · ${milestones[i]}</text></g>`; }).join('')}</svg></div><p class="hint gantt-mobile-hint">En pantalles petites, desplaça el diagrama horitzontalment per veure tot el calendari.</p></section>`;
-        }
-        const nav = document.getElementById('nav'), main = document.getElementById('main');
-        nav.innerHTML = ['Portada', ...blocks.map((b, i) => `${i + 1} · ${b.short}`)].map((s, i) => `<button data-page="${i}">${s}</button>`).join('');
-        const home = `<section class="page" id="page0"><div class="hero"><div class="eyebrow">SMX · Curs 2026 · Projecte tecnològic solidari</div><h1>Del problema<br>al prototip.</h1><p class="lead">Dissenya una solució tecnològica amb finalitat solidària. Organitza la feina amb Trello, demostra avenços cada setmana i prepara una activitat perquè els companys hi participin el <strong>18 de desembre de 2026</strong>.</p><div class="pills"><span class="pill">Inici · 19/10/2026</span><span class="pill">♥ Jornada · 18/12</span><span class="pill">✓ Producte acabat · 10/12</span><span class="pill">◷ 6 h setmanals</span><span class="pill">▦ 4 entregues obligatòries</span></div></div><h2>Dates clau d'entrega</h2><div class="grid">${keyDates.map(([d, t, s], i) => `<div class="card"><div class="date">${d} · 2026</div><div class="big">${t}</div><div class="small">${s}</div>${i < blocks.length ? `<p><a href="#bloc-${i + 2}" data-go="${i + 2}">Veure el bloc →</a></p>` : ''}</div>`).join('')}</div>${renderGantt()}<section class="section cols"><div class="note"><h3>Com treballarem?</h3><p><strong>Dilluns · 3 h:</strong> producció i desenvolupament.<br><strong>Dimarts · 1 h:</strong> revisió de Trello, bloquejos i decisions.<br><strong>Dijous · 2 h:</strong> tancament de tasques i entrega.</p></div><div class="note"><h3>Regla d'or</h3><p><strong>Una tasca no està feta sense evidència.</strong> Cada targeta del Trello ha de tenir responsable, data límit, criteri d'acceptació i prova del resultat. Prioritza l’MVP abans de les millores opcionals.</p></div></section><div class="actions"><span></span><button class="action" data-next="1">Començar · Bloc 1 →</button></div></section>`;
-        function renderBlock(b, i) { return `<section class="page" id="page${i + 1}"><div class="eyebrow">Bloc ${i + 1} · ${blocks.length} blocs · ${b.dates}</div><h1>${b.title}</h1><p class="lead">${b.goal}</p><div class="strip"><span class="tag">Trello + evidències</span><span class="tag gray">${b.dates}</span><span class="tag green">${i === 0 ? 'Validació' : 'Entrega'}: ${b.due.split(' · ')[0]}</span></div>${i === 0 ? `<section class="deliver"><h2>Documentació guiada · pas a pas</h2><p>Feu servir un únic dossier compartit i completeu-lo a cada sessió. La guia inclou una fitxa de funcionalitat resolta, arquitectura amb caixes i fletxes i wireframes que podeu dibuixar a mà.</p><p><a href="guia_idear.html">Obrir la guia i la plantilla →</a> · <a href="plantilla_idear.md" download>Descarregar la plantilla per copiar-la al vostre document</a></p><p class="hint">Al final de cada sessió: actualitzeu el dossier, afegiu les evidències i dediqueu cinc minuts al diari i al Trello. Aquests esbossos inicials es desenvoluparan al bloc 3.</p></section>` : ''}<section class="section"><h2>Què hem de fer cada dia?</h2>${b.days.map(([day, h, tasks, evidence]) => `<div class="day"><div><div class="dayhead">${day}</div><span class="hours">${h}</span></div><div><h3>Tasques de la sessió</h3><ul class="tasks">${tasks.map(t => `<li>${t}</li>`).join('')}</ul><p class="small"><strong>Evidència del dia:</strong> ${evidence}</p></div></div>`).join('')}</section><section class="deliver"><div class="eyebrow">${i === 0 ? 'Validació inicial' : 'Control obligatori'}</div><h2>${b.due}</h2><p><strong>Què heu de presentar?</strong> ${b.product}.</p><div class="cols"><div class="card"><h3>Checklist per superar l'entrega</h3><ul class="checklist">${b.criteria.map(c => `<li>${c}</li>`).join('')}</ul></div><div class="card"><h3>Què ha de quedar al Trello?</h3><p>${b.trello}</p><h3>Com es valida?</h3><p>Demostració breu davant del professorat i revisió d'evidències. Estat: <strong>🟢 assolit · 🟠 en risc · 🔴 no assolit</strong>.</p></div></div></section><div class="actions"><button class="action secondary" data-prev="${i}">← ${i === 0 ? 'Portada' : 'Bloc anterior'}</button>${i < blocks.length - 1 ? `<button class="action" data-next="${i + 2}">Bloc següent →</button>` : `<button class="action" data-next="0">Tornar a la portada ↗</button>`}</div></section>` }
-        main.innerHTML = home + blocks.map(renderBlock).join('');
-        function show(i) { document.querySelectorAll('.page').forEach((p, j) => p.classList.toggle('active', j === i)); document.querySelectorAll('nav button').forEach((b, j) => b.classList.toggle('active', j === i)); document.getElementById('progressBar').style.width = `${(i + 1) / (blocks.length + 1) * 100}%`; history.replaceState(null, '', i ? '#bloc-' + i : '#portada'); window.scrollTo({ top: 0, behavior: 'instant' }); } document.addEventListener('click', e => { let b = e.target.closest('[data-page],[data-next],[data-prev],[data-go]'); if (!b) return; e.preventDefault(); show(Number(b.dataset.page ?? b.dataset.next ?? b.dataset.prev ?? b.dataset.go)) }); let hash = location.hash.match(/bloc-(\d+)/); show(hash ? Math.max(1, Math.min(blocks.length, Number(hash[1]))) : 0);
+const phases = [
+ {title:'Definim el nostre projecte',short:'Definir',dates:'22 d’octubre – 6 de novembre',start:'2026-10-22',end:'2026-11-06',color:'#3756d9',goal:'De la idea a una proposta concreta i viable.',activities:[['Identificació del problema i proposta','2026-10-22','2026-10-30'],['Objectius, usuaris, funcionalitats i MVP','2026-11-02','2026-11-06']],topics:['Identificació del problema i proposta de solució.','Objectius del projecte i identificació de les persones usuàries.','Funcionalitats principals i priorització del producte mínim viable (MVP).'],product:'Document de definició del projecte amb l’MVP validat pel professorat.',due:'6 de novembre',template:'https://docs.google.com/document/d/1OmhdaRfofRwSAoE6BLJ_P5oTSKnuE1X6nSeW7Wb4_d4/edit?usp=sharing'},
+ {title:'Dissenyem i planifiquem la solució',short:'Dissenyar i planificar',dates:'9–20 de novembre',start:'2026-11-09',end:'2026-11-20',color:'#8a43b6',goal:'Del projecte definit al pla de desenvolupament.',activities:[['Disseny de pantalles, dades i tecnologies','2026-11-09','2026-11-13'],['IA, Kanban, planificació i primer prototip','2026-11-16','2026-11-20']],topics:['Disseny de pantalles i components i identificació de les dades necessàries.','Selecció de tecnologies i eines i definició d’instruccions per desenvolupar amb IA.','Descomposició en tasques, organització del tauler Kanban i planificació dels sprints.','Inici del primer prototip.'],product:'Disseny de la solució, Kanban organitzat i primer prototip.',due:'20 de novembre',template:null},
+ {title:'Construïm, provem i presentem',short:'Construir i presentar',dates:'23 de novembre – 18 de desembre',start:'2026-11-23',end:'2026-12-18',color:'#187b55',goal:'De la planificació a un producte demostrable.',activities:[['Desenvolupament de funcionalitats principals','2026-11-23','2026-11-27'],['Completar l’MVP','2026-11-30','2026-12-04'],['Proves, correccions i publicació','2026-12-07','2026-12-11'],['Documentació, assaig i presentació','2026-12-14','2026-12-17'],['Jornada Solidària','2026-12-18','2026-12-18']],topics:['Desenvolupament de les funcionalitats imprescindibles i integració de l’MVP.','Proves funcionals, correcció d’errors i millores d’usabilitat.','Publicació o preparació de la demostració.','Documentació final, assaig i presentació del projecte.'],product:'MVP funcional o prototip validat i presentació final.',due:'18 de desembre',template:null}
+];
+const milestones=[['2026-11-06','MVP definit i aprovat',1],['2026-11-20','Primer prototip',2],['2026-12-04','MVP funcional',3],['2026-12-18','Jornada Solidària',3]];
+const dayMs=86400000,origin=Date.parse('2026-10-22'),totalDays=58;
+const offset=d=>(Date.parse(d)-origin)/dayMs;
+const dateLabel=d=>new Intl.DateTimeFormat('ca',{day:'numeric',month:'short',timeZone:'UTC'}).format(new Date(d));
+const shortDate=d=>`${Number(d.slice(8))}/${Number(d.slice(5,7))}`;
+function templateLink(p,i){return p.template?`<a class="template-link" href="${p.template}" target="_blank" rel="noopener">Plantilla Fase ${i+1} — Definició del projecte ↗</a>`:i===1?'<p class="small">Plantilla de la fase 2: pendent d’incorporar.</p>':'';}
+function barRow(label,start,end,color,kind='activity'){
+ const left=offset(start)/totalDays*100,width=(offset(end)-offset(start)+1)/totalDays*100;
+ return `<div class="gantt-row ${kind}" style="--phase:${color}"><div class="gantt-label"><strong>${label}</strong><span>${shortDate(start)}${start!==end?' – '+shortDate(end):''}</span></div><div class="gantt-track"><span class="gantt-bar" style="left:${left}%;width:${width}%" aria-hidden="true"></span></div></div>`;
+}
+function gantt(){return `<section class="section" aria-labelledby="gantt-heading"><h2 id="gantt-heading">Cronograma del projecte</h2><p class="hint">Barres: durada prevista · ◆: fita. Desplegueu cada fase per consultar-ne les activitats.</p><div class="phase-gantt" role="region" aria-label="Gantt del 22 d’octubre al 18 de desembre de 2026" tabindex="0"><div class="gantt-inner"><div class="gantt-row gantt-axis"><div class="gantt-label">OCTUBRE → DESEMBRE · 2026</div><div class="gantt-track">${['2026-10-22','2026-11-02','2026-11-09','2026-11-16','2026-11-23','2026-11-30','2026-12-07','2026-12-18'].map(d=>`<span style="left:${(offset(d)+.5)/totalDays*100}%">${shortDate(d)}</span>`).join('')}</div></div>${phases.map((p,i)=>`<details class="gantt-phase" open style="--phase:${p.color}"><summary><span>Fase ${i+1} · ${p.short}</span><span class="small">${p.dates}</span></summary>${barRow(p.title,p.start,p.end,p.color,'phase-duration')}${p.activities.map(([label,start,end])=>start===end?milestoneRow(label,start,p.color):barRow(label,start,end,p.color)).join('')}${milestones.filter(([,label,n])=>n===i+1&&label!=='Jornada Solidària').map(([d,label])=>milestoneRow(label,d,p.color)).join('')}</details>`).join('')}</div></div><p class="hint">Calendari orientatiu: es pot ajustar segons el ritme de treball i les hores lectives disponibles. Les franges indiquen períodes de treball, no sessions de classe cada dia.</p></section>`;}
+function milestoneRow(label,date,color){return `<div class="gantt-row milestone-row" style="--phase:${color}"><div class="gantt-label"><strong>◆ ${label}</strong><span>${dateLabel(date)}</span></div><div class="gantt-track"><span class="gantt-diamond" style="left:${(offset(date)+.5)/totalDays*100}%" aria-hidden="true">◆</span></div></div>`;}
+const nav=document.getElementById('nav'),main=document.getElementById('main');
+nav.innerHTML=['Portada',...phases.map((p,i)=>`Fase ${i+1} · ${p.short}`)].map((label,i)=>`<button data-page="${i}">${label}</button>`).join('');
+const home=`<section class="page" id="page0"><div class="hero"><div class="eyebrow">SMX · Projecte tecnològic solidari · 2026</div><h1>De la idea<br>a la Jornada Solidària.</h1><p class="lead">Definim una proposta útil, dissenyem la solució i construïm un producte demostrable per a la Jornada del <strong>18 de desembre</strong>.</p><div class="pills"><span class="pill">22/10 – 18/12 · 2026</span><span class="pill">3 fases de treball</span><span class="pill">Trello · tasques i evidències</span></div></div><h2>Les tres fases del projecte</h2><div class="grid">${phases.map((p,i)=>`<article class="card phase-card" style="--phase:${p.color}"><div class="date">FASE ${i+1} · ${p.dates}</div><h3>${p.title}</h3><p>${p.goal}</p><p class="small"><strong>Lliurament · ${p.due}:</strong> ${p.product}</p>${templateLink(p,i)}<p><a href="#fase-${i+1}" data-go="${i+1}">Consultar la fase ${i+1} →</a></p></article>`).join('')}</div><section class="section"><h2>Dates clau i fites</h2><div class="milestone-cards">${milestones.map(([d,label,n])=>`<a class="card" href="#fase-${n}" data-go="${n}"><div class="date">◆ ${dateLabel(d)} · 2026</div><strong>${label}</strong></a>`).join('')}</div></section>${gantt()}<div class="note section"><h3>Com seguim el projecte?</h3><p>La web orienta sobre les fases, el calendari i els lliuraments. Completeu la documentació a les plantilles i manteniu el Kanban de Trello amb responsables, terminis i evidències.</p></div><div class="actions"><span></span><button class="action" data-next="1">Començar · Fase 1 →</button></div></section>`;
+function renderPhase(p,i){return `<section class="page" id="page${i+1}" style="--phase:${p.color}"><div class="eyebrow">FASE ${i+1} DE 3 · ${p.dates}</div><h1>${p.title}</h1><p class="lead">${p.goal}</p><div class="strip"><span class="tag">${p.dates}</span><span class="tag green">Lliurament · ${p.due}</span></div>${templateLink(p,i)}<section class="section"><h2>Què treballarem?</h2><ul class="tasks">${p.topics.map(t=>`<li>${t}</li>`).join('')}</ul></section><section class="section"><h2>Activitats i períodes</h2>${p.activities.map(([title,start,end])=>`<div class="day"><div class="dayhead">${shortDate(start)}${start!==end?' – '+shortDate(end):''}</div><div><h3>${title}</h3></div></div>`).join('')}</section><section class="deliver"><div class="eyebrow">Lliurament · ${p.due}</div><h2>Què heu de presentar?</h2><p>${p.product}</p><p class="small">${i===0?'Completeu la plantilla de definició i reviseu l’MVP amb el professorat.':i===1?'Mostreu el disseny, el tauler Kanban i el primer prototip.':'El 4 de desembre: MVP funcional. Després, proves, documentació i assaig fins a la Jornada del 18 de desembre.'}</p></section><p class="hint section">Planificació orientativa, ajustable al ritme de treball i a les hores lectives disponibles.</p><div class="actions"><button class="action secondary" data-prev="${i}">← ${i===0?'Portada':'Fase anterior'}</button><button class="action" data-next="${i<2?i+2:0}">${i<2?'Fase següent →':'Tornar a la portada'}</button></div></section>`;}
+main.innerHTML=home+phases.map(renderPhase).join('');
+function show(i){document.querySelectorAll('.page').forEach((p,j)=>p.classList.toggle('active',i===j));document.querySelectorAll('nav button').forEach((b,j)=>{b.classList.toggle('active',i===j);if(i===j)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});document.getElementById('progressBar').style.width=`${(i+1)/4*100}%`;history.replaceState(null,'',i?'#fase-'+i:'#portada');window.scrollTo({top:0,behavior:'instant'});}
+document.addEventListener('click',e=>{const control=e.target.closest('[data-page],[data-go],[data-next],[data-prev]');if(!control)return;e.preventDefault();show(Number(control.dataset.page??control.dataset.go??control.dataset.next??control.dataset.prev));});
+function pageFromHash(){const match=location.hash.match(/^(?:#fase-|#bloc-)(\d+)$/);return match?Math.max(1,Math.min(3,Number(match[1]))):0;}
+window.addEventListener('hashchange',()=>show(pageFromHash()));show(pageFromHash());
+
     </script>
 </body>
 
