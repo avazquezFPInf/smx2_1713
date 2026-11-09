@@ -457,9 +457,263 @@
                 display: none
             }
         }
-    .phase-card{border-top:5px solid var(--phase)}.phase-card .date{color:var(--phase)}.template-link{display:inline-block;background:#e8edff;border:1px solid #c8d5f4;border-radius:10px;padding:12px 15px;font-weight:750}.milestone-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.milestone-cards a{text-decoration:none;color:var(--ink)}.phase-gantt{overflow:auto;border:1px solid var(--border);border-radius:16px;background:white}.gantt-inner{min-width:1000px;padding:18px 20px 24px}.gantt-row{display:grid;grid-template-columns:330px 1fr;gap:20px;min-height:58px;align-items:center}.gantt-label{font-size:.86rem;padding:8px 0;line-height:1.35}.gantt-label strong{display:block}.gantt-label span{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}.gantt-track{position:relative;height:100%;min-height:45px;background:repeating-linear-gradient(to right,transparent 0,transparent calc(12.069% - 1px),#edf0f5 calc(12.069% - 1px),#edf0f5 12.069%)}.gantt-bar{position:absolute;top:50%;transform:translateY(-50%);height:18px;background:var(--phase);opacity:.65;border-radius:5px}.phase-duration .gantt-bar{height:26px;opacity:1}.phase-duration .gantt-label{color:var(--phase)}.gantt-axis{min-height:40px;border-bottom:1px solid var(--border);margin-bottom:8px;font-weight:700}.gantt-axis .gantt-track{background:none}.gantt-axis .gantt-track span{position:absolute;top:10px;transform:translateX(-50%);font-size:.75rem;color:var(--muted);white-space:nowrap}.gantt-phase{margin:10px 0;border-bottom:1px solid var(--border);padding-bottom:8px}.gantt-phase summary{cursor:pointer;padding:12px;background:#f5f7fb;border-radius:8px;font-weight:800;color:var(--phase)}.gantt-phase summary .small{margin-left:14px;font-weight:500}.gantt-diamond{position:absolute;top:50%;transform:translate(-50%,-50%);color:var(--phase);font-size:24px;line-height:1}.milestone-row{background:#f8fafc}.phase-gantt:focus-visible,summary:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #3756d9;outline-offset:3px}@media(max-width:760px){.milestone-cards{grid-template-columns:1fr 1fr}.template-link{width:100%}}@media print{.gantt-inner{min-width:0;padding:6px}.gantt-row{grid-template-columns:230px 1fr;gap:10px}.gantt-label{font-size:9pt}.gantt-axis .gantt-track span{font-size:7pt}.phase-gantt{overflow:visible}details{break-inside:avoid}}
 
-</style>
+        .phase-card {
+            border-top: 5px solid var(--phase)
+        }
+
+        .phase-card .date {
+            color: var(--phase)
+        }
+
+        .template-link {
+            display: inline-block;
+            background: #e8edff;
+            border: 1px solid #c8d5f4;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-weight: 750
+        }
+
+        .milestone-cards {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px
+        }
+
+        .milestone-cards a {
+            text-decoration: none;
+            color: var(--ink)
+        }
+
+        .phase-gantt {
+            overflow: auto;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: white
+        }
+
+        .gantt-inner {
+            min-width: 1000px;
+            padding: 18px 20px 24px
+        }
+
+        .gantt-row {
+            display: grid;
+            grid-template-columns: 330px 1fr;
+            gap: 20px;
+            min-height: 58px;
+            align-items: center
+        }
+
+        .gantt-label {
+            font-size: .86rem;
+            padding: 8px 0;
+            line-height: 1.35
+        }
+
+        .gantt-label strong {
+            display: block
+        }
+
+        .gantt-label span {
+            display: block;
+            color: var(--muted);
+            font-size: .78rem;
+            margin-top: 3px
+        }
+
+        .gantt-track {
+            position: relative;
+            height: 100%;
+            min-height: 45px;
+            background: repeating-linear-gradient(to right, transparent 0, transparent calc(12.069% - 1px), #edf0f5 calc(12.069% - 1px), #edf0f5 12.069%)
+        }
+
+        .gantt-bar {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 18px;
+            background: var(--phase);
+            opacity: .65;
+            border-radius: 5px
+        }
+
+        .phase-duration .gantt-bar {
+            height: 26px;
+            opacity: 1
+        }
+
+        .phase-duration .gantt-label {
+            color: var(--phase)
+        }
+
+        .gantt-axis {
+            min-height: 40px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 8px;
+            font-weight: 700
+        }
+
+        .gantt-axis .gantt-track {
+            background: none
+        }
+
+        .gantt-axis .gantt-track span {
+            position: absolute;
+            top: 10px;
+            transform: translateX(-50%);
+            font-size: .75rem;
+            color: var(--muted);
+            white-space: nowrap
+        }
+
+        .gantt-phase {
+            margin: 10px 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px
+        }
+
+        .gantt-phase summary {
+            cursor: pointer;
+            padding: 12px;
+            background: #f5f7fb;
+            border-radius: 8px;
+            font-weight: 800;
+            color: var(--phase)
+        }
+
+        .gantt-phase summary .small {
+            margin-left: 14px;
+            font-weight: 500
+        }
+
+        .gantt-diamond {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--phase);
+            font-size: 24px;
+            line-height: 1
+        }
+
+        .milestone-row {
+            background: #f8fafc
+        }
+
+        .phase-gantt:focus-visible,
+        summary:focus-visible,
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #3756d9;
+            outline-offset: 3px
+        }
+
+        @media(max-width:760px) {
+            .milestone-cards {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .template-link {
+                width: 100%
+            }
+        }
+
+        @media print {
+            .gantt-inner {
+                min-width: 0;
+                padding: 6px
+            }
+
+            .gantt-row {
+                grid-template-columns: 230px 1fr;
+                gap: 10px
+            }
+
+            .gantt-label {
+                font-size: 9pt
+            }
+
+            .gantt-axis .gantt-track span {
+                font-size: 7pt
+            }
+
+            .phase-gantt {
+                overflow: visible
+            }
+
+            details {
+                break-inside: avoid
+            }
+        }
+
+        .wire-example {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin-top: 16px;
+            padding: 16px
+        }
+
+        .wire-example summary {
+            cursor: pointer;
+            font-weight: 750;
+            color: #713394
+        }
+
+        .wire-example figure {
+            margin: 18px 0 0
+        }
+
+        .wire-example img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px
+        }
+
+        .wire-example figcaption {
+            font-size: .92rem;
+            color: var(--muted);
+            margin-top: 12px
+        }
+
+        .phase2-capsules .cols {
+            margin-top: 18px
+        }
+
+        .prompt-example {
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            background: #f5f7fb;
+            border-radius: 10px;
+            padding: 18px;
+            font: .92rem/1.65 ui-monospace, monospace
+        }
+
+        .ai-table {
+            overflow: auto
+        }
+
+        .ai-table table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 560px
+        }
+
+        .ai-table th,
+        .ai-table td {
+            text-align: left;
+            vertical-align: top;
+            padding: 12px;
+            border: 1px solid var(--border)
+        }
+
+        .ai-table thead {
+            background: #f1ebf8
+        }
+    </style>
 </head>
 
 <body>
@@ -476,32 +730,33 @@
     <main id="main"></main>
     <footer>Guia de treball i seguiment · Trello és l'eina de gestió del projecte · Calendari 2026</footer>
     <script>
-const phases = [
- {title:'Definim el nostre projecte',short:'Definir',dates:'22 d’octubre – 6 de novembre',start:'2026-10-22',end:'2026-11-06',color:'#3756d9',goal:'De la idea a una proposta concreta i viable.',activities:[['Identificació del problema i proposta','2026-10-22','2026-10-30'],['Objectius, usuaris, funcionalitats i MVP','2026-11-02','2026-11-06']],topics:['Identificació del problema i proposta de solució.','Objectius del projecte i identificació de les persones usuàries.','Funcionalitats principals i priorització del producte mínim viable (MVP).'],product:'Document de definició del projecte amb l’MVP validat pel professorat.',due:'6 de novembre',template:'https://docs.google.com/document/d/1OmhdaRfofRwSAoE6BLJ_P5oTSKnuE1X6nSeW7Wb4_d4/edit?usp=sharing'},
- {title:'Dissenyem i planifiquem la solució',short:'Dissenyar i planificar',dates:'9–20 de novembre',start:'2026-11-09',end:'2026-11-20',color:'#8a43b6',goal:'Del projecte definit al pla de desenvolupament.',activities:[['Disseny de pantalles, dades i tecnologies','2026-11-09','2026-11-13'],['IA, Kanban, planificació i primer prototip','2026-11-16','2026-11-20']],topics:['Disseny de pantalles i components i identificació de les dades necessàries.','Selecció de tecnologies i eines i definició d’instruccions per desenvolupar amb IA.','Descomposició en tasques, organització del tauler Kanban i planificació dels sprints.','Inici del primer prototip.'],product:'Disseny de la solució, Kanban organitzat i primer prototip.',due:'20 de novembre',template:null},
- {title:'Construïm, provem i presentem',short:'Construir i presentar',dates:'23 de novembre – 18 de desembre',start:'2026-11-23',end:'2026-12-18',color:'#187b55',goal:'De la planificació a un producte demostrable.',activities:[['Desenvolupament de funcionalitats principals','2026-11-23','2026-11-27'],['Completar l’MVP','2026-11-30','2026-12-04'],['Proves, correccions i publicació','2026-12-07','2026-12-11'],['Documentació, assaig i presentació','2026-12-14','2026-12-17'],['Jornada Solidària','2026-12-18','2026-12-18']],topics:['Desenvolupament de les funcionalitats imprescindibles i integració de l’MVP.','Proves funcionals, correcció d’errors i millores d’usabilitat.','Publicació o preparació de la demostració.','Documentació final, assaig i presentació del projecte.'],product:'MVP funcional o prototip validat i presentació final.',due:'18 de desembre',template:null}
-];
-const milestones=[['2026-11-06','MVP definit i aprovat',1],['2026-11-20','Primer prototip',2],['2026-12-04','MVP funcional',3],['2026-12-18','Jornada Solidària',3]];
-const dayMs=86400000,origin=Date.parse('2026-10-22'),totalDays=58;
-const offset=d=>(Date.parse(d)-origin)/dayMs;
-const dateLabel=d=>new Intl.DateTimeFormat('ca',{day:'numeric',month:'short',timeZone:'UTC'}).format(new Date(d));
-const shortDate=d=>`${Number(d.slice(8))}/${Number(d.slice(5,7))}`;
-function templateLink(p,i){return p.template?`<a class="template-link" href="${p.template}" target="_blank" rel="noopener">Plantilla Fase ${i+1} — Definició del projecte ↗</a>`:i===1?'<p class="small">Plantilla de la fase 2: pendent d’incorporar.</p>':'';}
-function barRow(label,start,end,color,kind='activity'){
- const left=offset(start)/totalDays*100,width=(offset(end)-offset(start)+1)/totalDays*100;
- return `<div class="gantt-row ${kind}" style="--phase:${color}"><div class="gantt-label"><strong>${label}</strong><span>${shortDate(start)}${start!==end?' – '+shortDate(end):''}</span></div><div class="gantt-track"><span class="gantt-bar" style="left:${left}%;width:${width}%" aria-hidden="true"></span></div></div>`;
-}
-function gantt(){return `<section class="section" aria-labelledby="gantt-heading"><h2 id="gantt-heading">Cronograma del projecte</h2><p class="hint">Barres: durada prevista · ◆: fita. Desplegueu cada fase per consultar-ne les activitats.</p><div class="phase-gantt" role="region" aria-label="Gantt del 22 d’octubre al 18 de desembre de 2026" tabindex="0"><div class="gantt-inner"><div class="gantt-row gantt-axis"><div class="gantt-label">OCTUBRE → DESEMBRE · 2026</div><div class="gantt-track">${['2026-10-22','2026-11-02','2026-11-09','2026-11-16','2026-11-23','2026-11-30','2026-12-07','2026-12-18'].map(d=>`<span style="left:${(offset(d)+.5)/totalDays*100}%">${shortDate(d)}</span>`).join('')}</div></div>${phases.map((p,i)=>`<details class="gantt-phase" open style="--phase:${p.color}"><summary><span>Fase ${i+1} · ${p.short}</span><span class="small">${p.dates}</span></summary>${barRow(p.title,p.start,p.end,p.color,'phase-duration')}${p.activities.map(([label,start,end])=>start===end?milestoneRow(label,start,p.color):barRow(label,start,end,p.color)).join('')}${milestones.filter(([,label,n])=>n===i+1&&label!=='Jornada Solidària').map(([d,label])=>milestoneRow(label,d,p.color)).join('')}</details>`).join('')}</div></div><p class="hint">Calendari orientatiu: es pot ajustar segons el ritme de treball i les hores lectives disponibles. Les franges indiquen períodes de treball, no sessions de classe cada dia.</p></section>`;}
-function milestoneRow(label,date,color){return `<div class="gantt-row milestone-row" style="--phase:${color}"><div class="gantt-label"><strong>◆ ${label}</strong><span>${dateLabel(date)}</span></div><div class="gantt-track"><span class="gantt-diamond" style="left:${(offset(date)+.5)/totalDays*100}%" aria-hidden="true">◆</span></div></div>`;}
-const nav=document.getElementById('nav'),main=document.getElementById('main');
-nav.innerHTML=['Portada',...phases.map((p,i)=>`Fase ${i+1} · ${p.short}`)].map((label,i)=>`<button data-page="${i}">${label}</button>`).join('');
-const home=`<section class="page" id="page0"><div class="hero"><div class="eyebrow">SMX · Projecte tecnològic solidari · 2026</div><h1>De la idea<br>a la Jornada Solidària.</h1><p class="lead">Definim una proposta útil, dissenyem la solució i construïm un producte demostrable per a la Jornada del <strong>18 de desembre</strong>.</p><div class="pills"><span class="pill">22/10 – 18/12 · 2026</span><span class="pill">3 fases de treball</span><span class="pill">Trello · tasques i evidències</span></div></div><h2>Les tres fases del projecte</h2><div class="grid">${phases.map((p,i)=>`<article class="card phase-card" style="--phase:${p.color}"><div class="date">FASE ${i+1} · ${p.dates}</div><h3>${p.title}</h3><p>${p.goal}</p><p class="small"><strong>Lliurament · ${p.due}:</strong> ${p.product}</p>${templateLink(p,i)}<p><a href="#fase-${i+1}" data-go="${i+1}">Consultar la fase ${i+1} →</a></p></article>`).join('')}</div><section class="section"><h2>Dates clau i fites</h2><div class="milestone-cards">${milestones.map(([d,label,n])=>`<a class="card" href="#fase-${n}" data-go="${n}"><div class="date">◆ ${dateLabel(d)} · 2026</div><strong>${label}</strong></a>`).join('')}</div></section>${gantt()}<div class="note section"><h3>Com seguim el projecte?</h3><p>La web orienta sobre les fases, el calendari i els lliuraments. Completeu la documentació a les plantilles i manteniu el Kanban de Trello amb responsables, terminis i evidències.</p></div><div class="actions"><span></span><button class="action" data-next="1">Començar · Fase 1 →</button></div></section>`;
-function renderPhase(p,i){return `<section class="page" id="page${i+1}" style="--phase:${p.color}"><div class="eyebrow">FASE ${i+1} DE 3 · ${p.dates}</div><h1>${p.title}</h1><p class="lead">${p.goal}</p><div class="strip"><span class="tag">${p.dates}</span><span class="tag green">Lliurament · ${p.due}</span></div>${templateLink(p,i)}<section class="section"><h2>Què treballarem?</h2><ul class="tasks">${p.topics.map(t=>`<li>${t}</li>`).join('')}</ul></section><section class="section"><h2>Activitats i períodes</h2>${p.activities.map(([title,start,end])=>`<div class="day"><div class="dayhead">${shortDate(start)}${start!==end?' – '+shortDate(end):''}</div><div><h3>${title}</h3></div></div>`).join('')}</section><section class="deliver"><div class="eyebrow">Lliurament · ${p.due}</div><h2>Què heu de presentar?</h2><p>${p.product}</p><p class="small">${i===0?'Completeu la plantilla de definició i reviseu l’MVP amb el professorat.':i===1?'Mostreu el disseny, el tauler Kanban i el primer prototip.':'El 4 de desembre: MVP funcional. Després, proves, documentació i assaig fins a la Jornada del 18 de desembre.'}</p></section><p class="hint section">Planificació orientativa, ajustable al ritme de treball i a les hores lectives disponibles.</p><div class="actions"><button class="action secondary" data-prev="${i}">← ${i===0?'Portada':'Fase anterior'}</button><button class="action" data-next="${i<2?i+2:0}">${i<2?'Fase següent →':'Tornar a la portada'}</button></div></section>`;}
-main.innerHTML=home+phases.map(renderPhase).join('');
-function show(i){document.querySelectorAll('.page').forEach((p,j)=>p.classList.toggle('active',i===j));document.querySelectorAll('nav button').forEach((b,j)=>{b.classList.toggle('active',i===j);if(i===j)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});document.getElementById('progressBar').style.width=`${(i+1)/4*100}%`;history.replaceState(null,'',i?'#fase-'+i:'#portada');window.scrollTo({top:0,behavior:'instant'});}
-document.addEventListener('click',e=>{const control=e.target.closest('[data-page],[data-go],[data-next],[data-prev]');if(!control)return;e.preventDefault();show(Number(control.dataset.page??control.dataset.go??control.dataset.next??control.dataset.prev));});
-function pageFromHash(){const match=location.hash.match(/^(?:#fase-|#bloc-)(\d+)$/);return match?Math.max(1,Math.min(3,Number(match[1]))):0;}
-window.addEventListener('hashchange',()=>show(pageFromHash()));show(pageFromHash());
+        const phases = [
+            { title: 'Definim el nostre projecte', short: 'Definir', dates: '22 d’octubre – 6 de novembre', start: '2026-10-22', end: '2026-11-06', color: '#3756d9', goal: 'De la idea a una proposta concreta i viable.', activities: [['Identificació del problema i proposta', '2026-10-22', '2026-10-30'], ['Objectius, usuaris, funcionalitats i MVP', '2026-11-02', '2026-11-06']], topics: ['Identificació del problema i proposta de solució.', 'Objectius del projecte i identificació de les persones usuàries.', 'Funcionalitats principals i priorització del producte mínim viable (MVP).'], product: 'Document de definició del projecte amb l’MVP validat pel professorat.', due: '6 de novembre', template: 'https://docs.google.com/document/d/1OmhdaRfofRwSAoE6BLJ_P5oTSKnuE1X6nSeW7Wb4_d4/edit?usp=sharing' },
+            { title: 'Dissenyem i planifiquem la solució', short: 'Dissenyar i planificar', dates: '9–20 de novembre', start: '2026-11-09', end: '2026-11-20', color: '#8a43b6', goal: 'Del projecte definit al pla de desenvolupament.', activities: [['Disseny de pantalles, dades i tecnologies', '2026-11-09', '2026-11-13'], ['IA, Kanban, planificació i primer prototip', '2026-11-16', '2026-11-20']], topics: ['Disseny de pantalles i components i identificació de les dades necessàries.', 'Selecció de tecnologies i eines i definició d’instruccions per desenvolupar amb IA.', 'Descomposició en tasques, organització del tauler Kanban i planificació dels sprints.', 'Inici del primer prototip.'], product: 'Disseny de la solució, Kanban organitzat i primer prototip.', due: '20 de novembre', template: 'https://docs.google.com/document/d/1lW5ViwUH-Bi_n8AlhwBjVsbhQZ5n7hDh_gxZM08JRCo/edit?usp=sharing' },
+            { title: 'Construïm, provem i presentem', short: 'Construir i presentar', dates: '23 de novembre – 18 de desembre', start: '2026-11-23', end: '2026-12-18', color: '#187b55', goal: 'De la planificació a un producte demostrable.', activities: [['Desenvolupament de funcionalitats principals', '2026-11-23', '2026-11-27'], ['Completar l’MVP', '2026-11-30', '2026-12-04'], ['Proves, correccions i publicació', '2026-12-07', '2026-12-11'], ['Documentació, assaig i presentació', '2026-12-14', '2026-12-17'], ['Jornada Solidària', '2026-12-18', '2026-12-18']], topics: ['Desenvolupament de les funcionalitats imprescindibles i integració de l’MVP.', 'Proves funcionals, correcció d’errors i millores d’usabilitat.', 'Publicació o preparació de la demostració.', 'Documentació final, assaig i presentació del projecte.'], product: 'MVP funcional o prototip validat i presentació final.', due: '18 de desembre', template: null }
+        ];
+        const milestones = [['2026-11-06', 'MVP definit i aprovat', 1], ['2026-11-20', 'Primer prototip', 2], ['2026-12-04', 'MVP funcional', 3], ['2026-12-18', 'Jornada Solidària', 3]];
+        const dayMs = 86400000, origin = Date.parse('2026-10-22'), totalDays = 58;
+        const offset = d => (Date.parse(d) - origin) / dayMs;
+        const dateLabel = d => new Intl.DateTimeFormat('ca', { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(d));
+        const shortDate = d => `${Number(d.slice(8))}/${Number(d.slice(5, 7))}`;
+        function templateLink(p, i) { return p.template ? `<a class="template-link" href="${p.template}" target="_blank" rel="noopener">Plantilla Fase ${i + 1} — ${i === 0 ? 'Definició del projecte' : 'Disseny i planificació de la solució'} ↗</a>` : i === 1 ? '<p class="small">Plantilla de la fase 2: pendent d’incorporar.</p>' : ''; }
+        function barRow(label, start, end, color, kind = 'activity') {
+            const left = offset(start) / totalDays * 100, width = (offset(end) - offset(start) + 1) / totalDays * 100;
+            return `<div class="gantt-row ${kind}" style="--phase:${color}"><div class="gantt-label"><strong>${label}</strong><span>${shortDate(start)}${start !== end ? ' – ' + shortDate(end) : ''}</span></div><div class="gantt-track"><span class="gantt-bar" style="left:${left}%;width:${width}%" aria-hidden="true"></span></div></div>`;
+        }
+        function gantt() { return `<section class="section" aria-labelledby="gantt-heading"><h2 id="gantt-heading">Cronograma del projecte</h2><p class="hint">Barres: durada prevista · ◆: fita. Desplegueu cada fase per consultar-ne les activitats.</p><div class="phase-gantt" role="region" aria-label="Gantt del 22 d’octubre al 18 de desembre de 2026" tabindex="0"><div class="gantt-inner"><div class="gantt-row gantt-axis"><div class="gantt-label">OCTUBRE → DESEMBRE · 2026</div><div class="gantt-track">${['2026-10-22', '2026-11-02', '2026-11-09', '2026-11-16', '2026-11-23', '2026-11-30', '2026-12-07', '2026-12-18'].map(d => `<span style="left:${(offset(d) + .5) / totalDays * 100}%">${shortDate(d)}</span>`).join('')}</div></div>${phases.map((p, i) => `<details class="gantt-phase" open style="--phase:${p.color}"><summary><span>Fase ${i + 1} · ${p.short}</span><span class="small">${p.dates}</span></summary>${barRow(p.title, p.start, p.end, p.color, 'phase-duration')}${p.activities.map(([label, start, end]) => start === end ? milestoneRow(label, start, p.color) : barRow(label, start, end, p.color)).join('')}${milestones.filter(([, label, n]) => n === i + 1 && label !== 'Jornada Solidària').map(([d, label]) => milestoneRow(label, d, p.color)).join('')}</details>`).join('')}</div></div><p class="hint">Calendari orientatiu: es pot ajustar segons el ritme de treball i les hores lectives disponibles. Les franges indiquen períodes de treball, no sessions de classe cada dia.</p></section>`; }
+        function milestoneRow(label, date, color) { return `<div class="gantt-row milestone-row" style="--phase:${color}"><div class="gantt-label"><strong>◆ ${label}</strong><span>${dateLabel(date)}</span></div><div class="gantt-track"><span class="gantt-diamond" style="left:${(offset(date) + .5) / totalDays * 100}%" aria-hidden="true">◆</span></div></div>`; }
+        const nav = document.getElementById('nav'), main = document.getElementById('main');
+        nav.innerHTML = ['Portada', ...phases.map((p, i) => `Fase ${i + 1} · ${p.short}`)].map((label, i) => `<button data-page="${i}">${label}</button>`).join('');
+        const home = `<section class="page" id="page0"><div class="hero"><div class="eyebrow">SMX · Projecte tecnològic solidari · 2026</div><h1>De la idea<br>a la Jornada Solidària.</h1><p class="lead">Definim una proposta útil, dissenyem la solució i construïm un producte demostrable per a la Jornada del <strong>18 de desembre</strong>.</p><div class="pills"><span class="pill">22/10 – 18/12 · 2026</span><span class="pill">3 fases de treball</span><span class="pill">Trello · tasques i evidències</span></div></div><h2>Les tres fases del projecte</h2><div class="grid">${phases.map((p, i) => `<article class="card phase-card" style="--phase:${p.color}"><div class="date">FASE ${i + 1} · ${p.dates}</div><h3>${p.title}</h3><p>${p.goal}</p><p class="small"><strong>Lliurament · ${p.due}:</strong> ${p.product}</p>${templateLink(p, i)}<p><a href="#fase-${i + 1}" data-go="${i + 1}">Consultar la fase ${i + 1} →</a></p></article>`).join('')}</div><section class="section"><h2>Dates clau i fites</h2><div class="milestone-cards">${milestones.map(([d, label, n]) => `<a class="card" href="#fase-${n}" data-go="${n}"><div class="date">◆ ${dateLabel(d)} · 2026</div><strong>${label}</strong></a>`).join('')}</div></section>${gantt()}<div class="note section"><h3>Com seguim el projecte?</h3><p>La web orienta sobre les fases, el calendari i els lliuraments. Completeu la documentació a les plantilles i manteniu el Kanban de Trello amb responsables, terminis i evidències.</p></div><div class="actions"><span></span><button class="action" data-next="1">Començar · Fase 1 →</button></div></section>`;
+        const phase2Capsules = "<section class=\"section phase2-capsules\" aria-labelledby=\"capsules-title\"><h2 id=\"capsules-title\">Càpsules · Del paper a les pantalles</h2><p class=\"hint\">Primer pensem què ha de poder fer la persona. Després dibuixem com ho farà. Podeu treballar amb paper i llapis.</p><div class=\"cols\"><article class=\"card\"><div class=\"eyebrow\">01 · Entendre</div><h3>Què és un wireframe?</h3><p>És un esbós d’una pantalla: situa el títol, la informació, els botons i els camps. Serveix per comprovar si la solució s’entén <strong>abans de programar-la</strong>.</p><p class=\"small\">Un rectangle amb una creu representa una imatge. Les línies representen text. Escriviu noms de botó concrets, com «Veure activitats».</p></article><article class=\"card\"><div class=\"eyebrow\">02 · Acotar</div><h3>Quin detall necessitem?</h3><p>Dibuixos senzills i llegibles, sense colors ni decoració. Cada pantalla ha de tenir un codi (P01, P02…) i una finalitat clara.</p><p class=\"small\">El wireframe mostra la distribució; el recorregut connecta pantalles; el prototip permet simular-ne l’ús. Avui no cal codi ni un prototip clicable.</p></article></div><details class=\"wire-example\" open><summary>Exemple 1 · Un recorregut de principi a fi</summary><figure><a href=\"assets/wireframe-recorregut.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/wireframe-recorregut.png\" alt=\"Sis pantalles dibuixades a mà i connectades amb fletxes: accés, inici, resultats, detall, valoració i confirmació.\" loading=\"lazy\"></a><figcaption>Observeu com cada pantalla resol un pas i porta al següent. En el vostre projecte, dibuixeu només els passos necessaris per a l’MVP. No afegiu un inici de sessió si no el necessiteu.</figcaption></figure></details><details class=\"wire-example\"><summary>Exemple 2 · Què hi ha dins de cada pantalla?</summary><figure><a href=\"assets/wireframe-pantalles.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/wireframe-pantalles.png\" alt=\"Quatre esbossos de mòbil amb cercador, targetes, opcions, llistes i un perfil; sense disseny visual final.\" loading=\"lazy\"></a><figcaption>Identifiqueu títols, llistes, camps i botons. No cal dibuixar un mòbil amb detall: un rectangle és suficient. Les pantalles també poden ser de web o d’ordinador.</figcaption></figure></details><details class=\"wire-example\"><summary>Exemple 3 · Com connectem botons i pantalles?</summary><figure><a href=\"assets/wireframe-navegacio.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/wireframe-navegacio.png\" alt=\"Esbossos de pantalles amb fletxes vermelles que uneixen els controls amb les pantalles de destinació.\" loading=\"lazy\"></a><figcaption>La fletxa surt del botó que es prem i arriba a la pantalla que s’obre. Indiqueu també com es torna enrere. Per al vostre primer recorregut, prioritzeu poques fletxes clares.</figcaption></figure></details><div class=\"cols section\"><article class=\"note\"><h3>03 · Fer-ho pas a pas</h3><ol class=\"tasks\"><li>Trieu una funcionalitat imprescindible de l’MVP (F01).</li><li>Expliqueu què vol aconseguir la persona en una frase.</li><li>Dibuixeu les pantalles necessàries: P01, P02…</li><li>Afegiu-hi informació realista i botons amb nom.</li><li>Connecteu els botons amb fletxes i indiqueu F01 al dibuix.</li><li>Mostreu un cas alternatiu: llista buida, error o manca d’informació.</li></ol></article><article class=\"note\"><h3>04 · Provar-ho sense programar</h3><p>Doneu els dibuixos a una persona d’un altre equip i demaneu-li una acció concreta: «Troba on es fa l’activitat».</p><p>Que assenyali què prem i què espera veure. No la guieu. Anoteu una dificultat i corregiu el dibuix. Feu-ne una foto llegible per al dossier.</p></article></div><section class=\"deliver\"><div class=\"eyebrow\">Primera sessió · 9 de novembre</div><h2>Fins on hem d’arribar avui?</h2><p><strong>Proposta de treball:</strong> completar els apartats <strong>8.1 · Pantalles o components</strong> i <strong>8.2 · Esbossos o wireframes</strong>. No cal acabar tota la fase 2 avui.</p><ul class=\"checklist\"><li>Funcionalitat escollida i persona que l’utilitza.</li><li>Pantalles necessàries numerades, amb informació, camps i botons.</li><li>Fletxes de navegació i un cas alternatiu.</li><li>Fotografia dels esbossos, una dificultat detectada i el canvi acordat.</li></ul><p class=\"hint\">Feu servir la plantilla enllaçada a l’inici. Avui atureu-vos al final del 8.2. L’apartat 8.3 (informació i dades) queda per a la sessió següent.</p><p class=\"small\"><strong>Després:</strong> fins al 13/11, completeu pantalles, dades i tecnologies. Del 16 al 20/11, treballareu les instruccions per a la IA, el Kanban, els sprints i el primer prototip.</p><p class=\"small\">Si el projecte no té pantalles, feu un esquema dels passos de l’activitat o servei, amb les accions, els materials i les decisions.</p></section></section>\n<section class=\"section\" aria-labelledby=\"ia-title\"><h2 id=\"ia-title\">Càpsula · Com demanem ajuda a una IA?</h2><p class=\"hint\">Per als apartats 9.1–9.3 de la plantilla. Un prompt és la petició que escrivim a la IA. Com més clar és el context i el resultat esperat, més fàcil és revisar-ne la resposta.</p><div class=\"cols\"><article class=\"card\"><h3>Una recepta en sis passos</h3><ol class=\"tasks\"><li><strong>Context:</strong> qui sou, el vostre nivell i quin problema resoleu.</li><li><strong>Objectiu:</strong> una petició concreta, amb la funcionalitat F01 que voleu treballar.</li><li><strong>Informació:</strong> usuaris, MVP, recorregut, dades i wireframes.</li><li><strong>Límits:</strong> temps, eines acordades i què queda fora del projecte.</li><li><strong>Resposta esperada:</strong> passos breus, preguntes o una taula, amb llenguatge senzill.</li><li><strong>Comprovació:</strong> què ha de passar perquè considereu correcte el resultat.</li></ol></article><article class=\"card\"><h3>De vague a concret</h3><p><strong>Poc útil:</strong> «Fes una aplicació per a una jornada solidària».</p><p><strong>Més útil:</strong> «Revisa el recorregut F01: consultar activitats. La pantalla P01 mostra títol, lloc i horari. Indica quina informació falta i proposa tres comprovacions. No afegeixis registre ni pagaments i encara no generis codi».</p><p class=\"small\">Adjunteu una foto llegible del wireframe si l’eina ho permet. Expliqueu què representa; no doneu per fet que la IA l’interpretarà bé.</p></article></div><details class=\"wire-example\"><summary>Prompt inicial per adaptar al vostre projecte</summary><pre class=\"prompt-example\">Actua com un tutor tècnic per a alumnat de SMX amb poca experiència en aplicacions.\n\nProjecte: [nom i problema].\nPersones usuàries: [qui l’utilitzarà].\nMVP acordat: [funcionalitats F01, F02…].\nRecorregut principal: [passos de la persona i resultat].\nPantalles: [P01, P02… i què mostren; adjuntem els esbossos].\nDades necessàries: [dades inventades per a les proves].\nTecnologies acordades amb el professorat: [eines; si no estan decidides, indica-ho].\nLímits: [temps, coneixements i què no farem].\n\nAbans de generar codi:\n1. Resumeix què has entès en cinc línies.\n2. Pregunta’ns què falta aclarir, sense inventar requisits.\n3. Detecta riscos i proposa simplificacions.\n4. Proposa tres proves amb un resultat esperat concret.\nNo comencis a programar fins que revisem i aprovem la proposta.</pre><p class=\"small\">Substituïu els claudàtors. No envieu dades personals reals, contrasenyes ni claus privades.</p></details><details class=\"wire-example\"><summary>Després de la resposta: revisar i avançar a poc a poc</summary><ol class=\"tasks\"><li>Compareu el resum amb l’MVP: ha afegit alguna cosa que no heu demanat?</li><li>Responeu les preguntes i registreu al <strong>9.3</strong> què accepteu, què descarteu i per què.</li><li>Quan estigui validat, demaneu una sola funcionalitat: «Implementa només F01 amb les eines acordades. Explica els fitxers que tocaràs i com provar-ho».</li><li>Executeu el resultat i compareu-lo amb les proves. Que hi hagi codi no vol dir que funcioni.</li><li>Si falla: «Esperàvem [resultat], però passa [resultat real]. Ho reproduïm així: [passos]. El missatge exacte és [error sense dades sensibles]. Explica la causa i proposa el canvi mínim».</li></ol><p class=\"small\">Registreu les decisions al 9.4 i l’evolució del sprint al 10.4. Si no podeu explicar una solució, demaneu que us l’expliqui abans d’incorporar-la.</p></details><details class=\"wire-example\"><summary>Quina IA podem fer servir? Tres opcions i les diferències</summary><p>Totes tres poden ajudar a aclarir idees, revisar un prompt i explicar codi. La diferència pràctica és l’espai de treball i les funcions disponibles al vostre compte.</p><div class=\"ai-table\"><table><thead><tr><th>Eina</th><th>Com hi treballareu?</th><th>Quan us pot anar bé?</th></tr></thead><tbody><tr><th>ChatGPT</th><td>Conversa per revisar i explicar la proposta; eines d’escriptura i codi segons les funcions disponibles.</td><td>Preparar el prompt, preguntar per errors i revisar un canvi petit explicat pas a pas.</td></tr><tr><th>Gemini · Canvas</th><td>Espai per crear i editar documents, aplicacions i codi, amb vista del codi i eines de revisió.</td><td>Passar de la descripció a un primer prototip i revisar-ne la interfície, si Canvas està habilitat al compte.</td></tr><tr><th>Claude · Artifacts</th><td>Resultats en un espai al costat de la conversa: documents, dissenys, codi i eines interactives.</td><td>Revisar una proposta i iterar sobre un document o una petita demostració visual.</td></tr></tbody></table></div><p><strong>Proposta per a l’aula:</strong> trieu amb el professorat una eina disponible al centre i manteniu el mateix fil de projecte. No cal utilitzar-les totes ni contractar un pla de pagament per fer aquesta activitat.</p><p class=\"small\">La disponibilitat depèn del compte, l’edat, el pla i la configuració del centre. Cap d’aquestes eines garanteix un resultat correcte: cal entendre’l i provar-lo.</p><p class=\"small\">Fonts oficials: <a href=\"https://learn.chatgpt.com/docs/web\" target=\"_blank\" rel=\"noopener\">ChatGPT</a> · <a href=\"https://support.google.com/gemini/answer/16047321\" target=\"_blank\" rel=\"noopener\">Gemini Canvas</a> · <a href=\"https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them\" target=\"_blank\" rel=\"noopener\">Claude Artifacts</a>. Consulta: 9/11/2026.</p></details></section>\n<section class=\"section\"><h2>Recordatori · Sprints i Trello</h2><div class=\"cols\"><article class=\"note\"><h3>Un sprint = un objectiu petit i demostrable</h3><p>A l’inici, trieu què acabareu i repartiu les tasques. Durant el sprint, comuniqueu els bloquejos. Al final, mostreu què funciona, reviseu què queda pendent i decidiu una millora per al següent sprint. Registreu-ho al <strong>10.4</strong> del document.</p></article><article class=\"note\"><h3>Trello · Cinc minuts cada sessió</h3><p>Moveu les targetes: <strong>Pendent → En procés → En revisió → Fet</strong>. Cada tasca ha de tenir responsable, prioritat, data i criteri de finalització. Anoteu els bloquejos i afegiu-hi l’evidència. Només passa a «Fet» quan està comprovada.</p></article></div></section>";
+        function renderPhase(p, i) { return `<section class="page" id="page${i + 1}" style="--phase:${p.color}"><div class="eyebrow">FASE ${i + 1} DE 3 · ${p.dates}</div><h1>${p.title}</h1><p class="lead">${p.goal}</p><div class="strip"><span class="tag">${p.dates}</span><span class="tag green">Lliurament · ${p.due}</span></div>${templateLink(p, i)}<p class="hint">${['Document: apartats 1–7.', 'Document: apartats 8–10 i primera revisió del 12. El 10.4 es completa al final de cada sprint.', 'Document: apartats 11–14 i checklist de l’alumnat del 16. Manteniu actualitzats el 9.4 i el 10.4. El 15 i les valoracions docents els completa el professorat.'][i]}</p>${i === 1 ? phase2Capsules : ''}<section class="section"><h2>Què treballarem?</h2><ul class="tasks">${p.topics.map(t => `<li>${t}</li>`).join('')}</ul></section><section class="section"><h2>Activitats i períodes</h2>${p.activities.map(([title, start, end]) => `<div class="day"><div class="dayhead">${shortDate(start)}${start !== end ? ' – ' + shortDate(end) : ''}</div><div><h3>${title}</h3></div></div>`).join('')}</section><section class="deliver"><div class="eyebrow">Lliurament · ${p.due}</div><h2>Què heu de presentar?</h2><p>${p.product}</p><p class="small">${i === 0 ? 'Completeu la plantilla de definició i reviseu l’MVP amb el professorat.' : i === 1 ? 'Mostreu el disseny, el tauler Kanban i el primer prototip.' : 'El 4 de desembre: MVP funcional. Després, proves, documentació i assaig fins a la Jornada del 18 de desembre.'}</p></section><p class="hint section">Planificació orientativa, ajustable al ritme de treball i a les hores lectives disponibles.</p><div class="actions"><button class="action secondary" data-prev="${i}">← ${i === 0 ? 'Portada' : 'Fase anterior'}</button><button class="action" data-next="${i < 2 ? i + 2 : 0}">${i < 2 ? 'Fase següent →' : 'Tornar a la portada'}</button></div></section>`; }
+        main.innerHTML = home + phases.map(renderPhase).join('');
+        function show(i) { document.querySelectorAll('.page').forEach((p, j) => p.classList.toggle('active', i === j)); document.querySelectorAll('nav button').forEach((b, j) => { b.classList.toggle('active', i === j); if (i === j) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); }); document.getElementById('progressBar').style.width = `${(i + 1) / 4 * 100}%`; history.replaceState(null, '', i ? '#fase-' + i : '#portada'); window.scrollTo({ top: 0, behavior: 'instant' }); }
+        document.addEventListener('click', e => { const control = e.target.closest('[data-page],[data-go],[data-next],[data-prev]'); if (!control) return; e.preventDefault(); show(Number(control.dataset.page ?? control.dataset.go ?? control.dataset.next ?? control.dataset.prev)); });
+        function pageFromHash() { const match = location.hash.match(/^(?:#fase-|#bloc-)(\d+)$/); return match ? Math.max(1, Math.min(3, Number(match[1]))) : 0; }
+        window.addEventListener('hashchange', () => show(pageFromHash())); show(pageFromHash());
 
     </script>
 </body>
